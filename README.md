@@ -5,7 +5,7 @@ V1.0
 ## 组件依赖
 axios、element-ui、vue-lazyload
 
-##快速使用
+## 快速使用
 >在config.js中配置与服务器交互的数据接口
 
 ```javascript
@@ -44,7 +44,7 @@ Vue.use(Picturespace);
 <picture-space />
 ```
 
-##config.js配置项说明
+## config.js配置项说明
 ####apiUrl 获取数据例表的接口地址
 >图片空间会以prefix为前辍字段名在url中传参给接口地址，以获取该前辍下的数据
 **该项为必设项*
@@ -78,7 +78,7 @@ Vue.use(Picturespace);
 }
 ```
 
-####上传文件，方法POST
+#### 上传文件，方法POST
 >目前发前饿了么的上传UI为批量选择，逐个上传；
 *需注意的是，有可能上传的FILE对象为空，有一个prefix的数据，此时为类似新建文件夹处理
 
@@ -106,7 +106,7 @@ Vue.use(Picturespace);
  }
 ```
 
-####删除对象，方法DELETE
+#### 删除对象，方法DELETE
 
 * **提交参数**
 
@@ -124,11 +124,11 @@ Vue.use(Picturespace);
  }
 ```
 
-####headers 数据请求时头部信息
+#### headers 数据请求时头部信息
 >接收一个JSON对象
 
 
-##属性
+## 属性
 
 |参数|说明|类型|可选值|默认|
 |:-----|:-----|:-----|:------|:-----|
