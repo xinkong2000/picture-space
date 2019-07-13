@@ -45,13 +45,13 @@ Vue.use(Picturespace);
 ```
 
 ## config.js配置项说明
-####apiUrl 获取数据例表的接口地址
+#### apiUrl 获取数据例表的接口地址
 >图片空间会以prefix为前辍字段名在url中传参给接口地址，以获取该前辍下的数据
 **该项为必设项*
 *该数据接口需按照RESTful规范编写
 例：http://www.xdw.test/api/oss
 
-####获取数据，方法GET
+#### 获取数据，方法GET
 * **提交参数**
 
 |参数|说明|类型|可选值|默认|
