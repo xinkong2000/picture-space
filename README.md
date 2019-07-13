@@ -127,6 +127,7 @@ Vue.use(Picturespace);
 ####headers 数据请求时头部信息
 >接收一个JSON对象
 
+
 ##属性
 
 |参数|说明|类型|可选值|默认|
