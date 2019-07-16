@@ -5,17 +5,13 @@ V1.0
 ## 组件依赖
 axios、element-ui、vue-lazyload
 
-## 快速使用
->在config.js中配置与服务器交互的数据接口
+## 安装
 
-```javascript
-// picture-space/config.js
-export default {
-	// 获取数据的接口地址
-	getDataUrl: 'http://www.xdw.test/api/all'
-}
-```
->在项目mian.js引入依赖
+> npm i vue-picture-space -S
+
+## 快速使用
+
+> 在项目mian.js引入依赖
 
 ```javascript
 // main.js
@@ -29,26 +25,30 @@ import VueLazyload from 'vue-lazyload'
 Vue.use(VueLazyload);
 ```
 
->在项目main.js引入picture-space
+> 在项目main.js引入picture-space
 
 ```javascript
 // main.js
 // 图片空间
-import Picturespace from './components/lib/picture-space';
-Vue.use(Picturespace);
+import Picturespace from 'vue-picture-space';
+import 'vue-picture-space/lib/vue-picture-space.css';
+Vue.use(Picturespace, {
+	apiUrl: 'http://www.xdw.test/api/all'	// 数据请求地址，必须设置
+});
 ```
 
->在使用的地方插入标签
+> 在使用的地方插入标签
 
 ```html
 <picture-space />
 ```
 
-## config.js配置项说明
+## 参数配置项说明
 #### apiUrl 获取数据例表的接口地址
->图片空间会以prefix为前辍字段名在url中传参给接口地址，以获取该前辍下的数据
-**该项为必设项*
-*该数据接口需按照RESTful规范编写
+> 图片空间会以prefix为前辍字段名在url中传参给接口地址，以获取该前辍下的数据
+
+* *该项为必设项*
+* 该数据接口需按照RESTful规范编写
 例：http://www.xdw.test/api/oss
 
 #### 获取数据，方法GET
@@ -79,8 +79,9 @@ Vue.use(Picturespace);
 ```
 
 #### 上传文件，方法POST
->目前发前饿了么的上传UI为批量选择，逐个上传；
-*需注意的是，有可能上传的FILE对象为空，有一个prefix的数据，此时为类似新建文件夹处理
+> 目前发前饿了么的上传UI为批量选择，逐个上传；
+
+* 需注意的是，有可能上传的FILE对象为空，有一个prefix的数据，此时为类似新建文件夹处理
 
 * **提交参数**
 
@@ -125,8 +126,7 @@ Vue.use(Picturespace);
 ```
 
 #### headers 数据请求时头部信息
->接收一个JSON对象
-
+> 接收一个JSON对象
 
 ## 属性
 
@@ -142,5 +142,10 @@ Vue.use(Picturespace);
 |isWindow|是否窗口模式|Boolean|true/false|false|
 |isDrag|是否允许拖拽，只有窗口模式才可拖拽|Boolean|true/false|true|
 |iconType|Table中图标显示的大小|String|big/normal/small|normal|
+
+## 作者 能绣花的斧头
+
+> e-mail: xinkong2000@sina.com
+
 ----
 

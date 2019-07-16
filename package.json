@@ -1,0 +1,8 @@
+{
+  "name": "vue-picture-space",
+  "version": "0.1.3",
+  "description": "基于VUE的对象存储管理器前端组件",
+  "main": "lib/vue-picture-space.umd.min.js",
+  "keyword": "vue-picture-space picture-space pictureSpace PictureSpace",
+  "private": false
+}
